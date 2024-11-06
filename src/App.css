@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.App {
+  border-radius:10px ;
+  height: 40rem;
+  width: 50rem;
+
+  padding: 10px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;  
+  padding: 10px;
+  border: 30px;
+
+  border-radius: 20px;
+}
+
+.todoAdd {
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.darkModeBtn{
+  font-size: 50px;
+  border: none;
+}
+.addBtn {
+background-color: black;
+color: white;
+border: none;
+cursor: pointer;
+  font-size: 50px;
+}
+.todoList{
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  height: 100%;
+overflow-x: hidden;
+
+  overflow-y: scroll;
+  scrollbar-width:thin;
+ 
+}
+.todoItem{
+  list-style-type:decimal;
+font-size: 20px;
+margin-left: 10px;
+  width: 100%;
+
+
+}
+.itemBox{
+
+width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 25px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.itemEdit{
+  font-size: 30px;
+  
+  cursor: pointer;
+  .icon{
+    margin: 0 5px;
+  }
+}
+.editSave{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 10px;
+  .editInput{
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+outline: none;
+    border: none;
+    border-bottom: 1px solid;
+
+  }
+  .save{
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+.lightMode{
+  background-color: white;
+  color: black;
+  transition: 0.4s ease all;
+}
+.darkMode{
+  background-color: black ;
+  color: white;
+  transition: 0.4s ease all;
+}
